@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        a{
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position:center;">Find your college</h1>
+    <div class="login-box">
+        <h3 style="position: center;">Enter the details</h3>
+        <form>
+          <div class="user-box">
+            <input type="text" name="name" required="">
+            <label>What is your highest level of education?</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="email" required="">
+            <label>What is the name of your recent school/university?</label>
+          </div>
+          <div class="user-box">
+            <input type="tel" name="phone" required="">
+            <label>Phone</label>
+          </div>
+          <div class="user-box">
+            <input type="number" id="input" name="marks" required="">
+            <label>What is your score/expected score?</label>
+          </div>
+          <div class="box-around">
+            <a href="#" style="text-decoration: none;" onclick="finder()" >Next</a>
+            <span></span>
+          </div>
+          <br><br><br>
+          <div class="box-around">
+            <a href="first.html" style="text-decoration: none;" onclick="finder()" >Back</a>
+            <span></span>
+          </div>
+          <div>
+            <p id="result"></p>
+          </div>
+          </form>
+      </div>
+      <script src="app.js"></script>
+    
+</body>
+</html>
+
+
+

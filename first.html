@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        a{
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="position:center;">Find your college</h1>
+    <div class="login-box">
+        <h3 style="position: center;">Study Preferences</h3>
+        <form>
+          <div class="wrapper">What degree do you plan to study?
+            <input type="radio" name="select" id="option-1">
+            <input type="radio" name="select" id="option-2">
+              <label for="option-1" class="option option-1">
+                <div class="dot"></div>
+                 <span>Bachelors</span>
+                 </label>
+              <label for="option-2" class="option option-2">
+                <div class="dot"></div>
+                 <span>Masters</span>
+              </label>
+           </div>
+           <br>
+           <div class="box-1">
+            <p>Where do you want to study?</p>
+            <select required>
+              <option value="none">--Select--</option>
+              <option value="usa">United States of America</option>
+              <option value="canada">Canada</option>
+              <option value="aus">Australia & New Zealand</option>
+              <option value="uk">United Kingdom</option>
+              <option value="eu">European Union</option>
+            </select>
+          </div>
+          <div class="box-2">
+            <p>What are you planning to study?</p>
+            <select id="dropdown">
+              <option value="none">--Select--</option>
+              <option value="cs">Computer Science</option>
+              <option value="dsbi">Data Science and Business Intelligence</option>
+              <option value="me">Mechanical Engineering</option>
+              <option value="mis">Management Information Systems</option>
+              <option value="mba">MBA</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="ai">Artificial Intelligence</option>
+            </select>
+          </div>
+          <div class="box-around-1">
+            <a href="new.html" style="text-decoration: none;" onclick="finder()" >Next</a>
+            <span></span>
+          </div>
+          
+          
+          <div>
+            <p id="result"></p>
+          </div>
+          </form>
+      </div>
+      <script src="app.js"></script>
+    
+</body>
+</html>
+
+
+
